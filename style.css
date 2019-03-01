@@ -1,0 +1,74 @@
+.main {
+  padding: 0;
+  margin: 0;
+}
+.mrgn-left {
+  margin-left: 60px;
+}
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav-zone {
+  display: flex;
+}
+
+.top-nav-zone a {
+  color: black;
+}
+
+.changed-search {
+  position: relative;
+  z-index: 11;
+}
+.changed-search .form-control {
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  width: 918px;
+  background-color: inherit;
+}
+
+.flx-correct {
+  align-items: flex-start;
+  /* position: fixed; */
+}
+.projects {
+  justify-content: flex-start;
+}
+
+.basic-zone {
+  background-color: #E6E6E6;
+  margin-top: -56px;
+  padding-top: 56px;
+}
+
+.container .col {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 48px 10px 5px 10px;
+  box-shadow: 2px 3px 10px 1px;
+  padding: 17px 10px 10px 17px;
+}
+
+.btwn-items {
+  display: flex;
+}
+
+.occasions {
+  min-width: 160px;
+  max-width: 150px;
+  height: 20px;
+  border: 1px solid black;
+  padding: 1px 3px 3px 7px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.occasions-btn {
+  margin: -9px 0px 0px -8px;
+}

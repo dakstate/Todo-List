@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>To do list</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navbar top-nav-zone">
+      <a class="navbar-brand mrgn-left" href="#">ZAITPLAN</a>
+
+      <!-- Add new task -->
+      <form class="form-inline changed-search">
+        <input class="form-control" id="#item" type="text" placeholder="add new task">
+        <button class="btn" id="#add">Add</button>
+      </form>
+
+
+    </nav>
+
+    <div class="row">
+      <nav class="nav navbar col-3 flex-column flx-correct">
+        <div class="nav-item projects">
+          <h6>Projects</h6>
+          <a href="" class="nav-link">Project</a>
+          <button type="button" class="btn btn-primary" name="button">Add</button>
+        </div>
+        <div class="nav-item tasks">
+          <h6>Your tasks</h6>
+          <a href="" class="nav-link">Task</a>
+          <button type="button" class="btn btn-primary" name="button">Add</button>
+        </div>
+      </nav>
+      <div class="basic-zone col-9">
+        <div class="container">
+
+          <!-- New task body -->
+          <div class="row" id="#inner-zone">
+            <div class="col" id="#task">
+              <h6 class="task-title">Front-end</h6>
+              <form action="#" class="btwn-items">
+                <input class="occasions" type="text" id="inp-occ">
+                <button class="btn occasions-btn" type="submit">+</button>
+              </form>
+              <ul class="proces"></ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    document.getElementById('add').addEventListener('click', function() {
+      var value = document.getElementById('item').value;
+      if (value) {
+        addItem(value);
+      }
+    });
+
+    function addItemTodo(text) {
+
+      var list = document.getElementById('#inner-zone');
+
+      var item = document.createElement('div');
+      item.innerText = text;
+    }
+  </script>
+  <!-- <script type="text/javascript" src="main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
